@@ -3,29 +3,18 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { slide } from 'svelte/transition';
-	import Logo from '$lib/assets/logo.png';
 	import Captions from '$lib/assets/lakerhacks-promo-captions.vtt';
 	import TeamItem from '$lib/Components/TeamItem.svelte';
 	import CSALogo from '$lib/assets/CSA_logo.png';
-	import WonzonesLogo from '$lib/assets/Wonzones_logo.png';
 	import HCIOLogo from '$lib/assets/HCIO_logo.png';
-	import CSTEPLogo from '$lib/assets/CSTEP_logo.png';
 	import StudentAssociationLogo from '$lib/assets/studentassociationlogo.png';
 	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
 	import Image1 from '$lib/assets/image1.png';
 	import Image2 from '$lib/assets/image2.png';
-	import HarrisonImage from '$lib/assets/harrisonrussell.png';
-	import SamanthaImage from '$lib/assets/samanthabrown.png';
 	import HamadiImage from '$lib/assets/hamadibelghachi.png';
-	import HenryImage from '$lib/assets/henryrose.png';
-	import EliFereiraImage from '$lib/assets/elifereira.png';
-	import MioImage from '$lib/assets/miomahoney.png';
-	import WilliamImage from '$lib/assets/williamstone.png';
-	import EliDeCampoImage from '$lib/assets/elidecampo.png';
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
-	import JessImage from '$lib/assets/jessmetzner.png';
 	import { browser } from '$app/environment';
 
 	// For responsive navigation
@@ -87,7 +76,7 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const registrationURL = 'https://forms.gle/uqoj1GAksMGaDaoNA';
+	const registrationURL = 'https://forms.gle/i5QVqMY2qdeSHVB36';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -150,6 +139,7 @@
 		<div class="mx-auto flex w-full max-w-[1000px] flex-col gap-[60px]">
 			<div class="flex flex-col gap-[10px]">
 				<!-- Countdown Timer -->
+				<!-- FIXME: Change the following countdown timer to have semantic information for the integers. -->
 				<div class="flex justify-center gap-1">
 					<div
 						class="w-[70px] rounded-lg border border-white/10 bg-[#0B111F]/50 px-2 py-1 backdrop-blur-sm"
@@ -242,13 +232,7 @@
 					<img src={CSALogo} alt="CSA Logo" class="h-[100px] w-auto" />
 				</div>
 				<div class="flex w-[250px] justify-center">
-					<img src={WonzonesLogo} alt="Wonzones Logo" class="h-[100px] w-auto" />
-				</div>
-				<div class="flex w-[250px] justify-center">
 					<img src={HCIOLogo} alt="HCIO Logo" class="h-[100px] w-auto" />
-				</div>
-				<div class="flex w-[250px] justify-center">
-					<img src={CSTEPLogo} alt="CSTEP Logo" class="h-[100px] w-auto" />
 				</div>
 				<div class="flex w-[250px] justify-center">
 					<img
@@ -382,77 +366,88 @@
 			<h2 class="text-[#9CC747]">Meet Our Team</h2>
 			<div class="flex w-full flex-wrap justify-center gap-[20px]">
 				<TeamItem
-					name="Harrison Russell"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/harrisonrussell/"
-					image={HarrisonImage}
-				/>
-				<TeamItem
-					name="Samantha Brown"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/samanthajeanneb/"
-					image={SamanthaImage}
-				/>
-				<TeamItem
-					name="Mio Mahoney"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/mio-mahoney/"
-					image={MioImage}
-				/>
-				<TeamItem
-					name="Eli Fereira"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/eli-fereira/"
-					image={EliFereiraImage}
-				/>
-				<TeamItem
-					name="Hamadi Belghachi"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/hamadidesign/"
-					image={HamadiImage}
-				/>
-				<TeamItem
-					name="William Stone"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/william-s-stone/"
-					image={WilliamImage}
-				/>
-				<TeamItem
-					name="Eli DeCampo"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/eli-decampo-a28a27274/"
-					image={EliDeCampoImage}
-				/>
-				<TeamItem
-					name="Landon Rusco"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
-					image={LandonImage}
-				/>
-				<TeamItem
 					name="Joseph Vega"
-					role="Organizer"
+					role="Director"
 					linkedinUrl="https://www.linkedin.com/in/jvega2/"
 					image={JosephImage}
 				/>
 				<TeamItem
-					name="Henry Rose"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/hjrose29/"
-					image={HenryImage}
+					name="Landon Rusco"
+					role="Co-director/MLH head of contact"
+					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
+					image={LandonImage}
 				/>
 				<TeamItem
-					name="Riley Nixon"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/riley-o-nixon/"
-					image={RileyImage}
+				name="Shrishtika Bajracharya"
+				role="Co-director/MLH head of contact"
+				linkedinUrl=""
 				/>
 				<TeamItem
-					name="Jess Metzner"
-					role="Organizer"
-					linkedinUrl="https://www.linkedin.com/in/jessica-metzner-a0033a1a2/"
-					image={JessImage}
+					name="Hamadi Belghachi"
+					role="Content Creator"
+					linkedinUrl="https://www.linkedin.com/in/hamadidesign/"
+					image={HamadiImage}
 				/>
+			<TeamItem 
+				name="Aditya Raj Singh" 
+				role="Devpost & Registration Manager" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Ananta Bhowmick Antik" 
+				role="Marketing Coordinator" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Bivushi Basnet" 
+				role="Logistics Director" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Ethan" 
+				role="Art Director" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Ethanael Moody (thats me!)" 
+				role="Web Developer" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Jack" 
+				role="Sponsorship Coordinator" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Neh Patel" 
+				role="Volunteer Committee Lead" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Praneeta Pradhan" 
+				role="Budget Manager" 
+				linkedinUrl="" 
+				image="">
+			</TeamItem>
+			<TeamItem 
+				name="Riley Nixon" 
+				role="Live Event Coordinator" 
+				linkedinUrl="" 
+				image={RileyImage}>
+			</TeamItem>
+			<TeamItem
+				name="Ziaul Haque"
+				role=""
+				linkedinUrl=""
+				image=""
+			></TeamItem>
 			</div>
 		</div>
 	</section>
