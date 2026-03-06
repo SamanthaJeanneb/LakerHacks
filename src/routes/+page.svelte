@@ -9,7 +9,6 @@
 	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
 	import Image1 from '$lib/assets/image1.png';
 	import Image2 from '$lib/assets/image2.png';
-	import HamadiImage from '$lib/assets/hamadibelghachi.png';
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
@@ -370,12 +369,6 @@
 					image={JosephImage}
 				/>
 				<TeamItem
-					name="Landon Rusco"
-					role="Co-director/MLH head of contact"
-					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
-					image={LandonImage}
-				/>
-				<TeamItem
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
 				linkedinUrl=""
@@ -416,6 +409,12 @@
 				linkedinUrl="" 
 				image="">
 			</TeamItem>
+			<TeamItem
+					name="Landon Rusco"
+					role="Organizer/MLH head of contact"
+					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
+					image={LandonImage}
+				/>
 			<TeamItem 
 				name="Neh Patel" 
 				role="Volunteer Committee Lead" 
