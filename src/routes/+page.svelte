@@ -13,7 +13,7 @@
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
 	import { browser } from '$app/environment';
-
+	import ethanMoody from '$lib/assets/ethanMoody.png';
 	// For responsive navigation
 	let isMenuOpen: boolean = false;
 
@@ -373,6 +373,12 @@
 				role="Co-director/MLH head of contact"
 				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
 				/>
+				<TeamItem
+					name="Landon Rusco"
+					role="Organizer/MLH head of contact"
+					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
+					image={LandonImage}
+				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
 				role="Devpost & Registration Manager" 
@@ -400,8 +406,8 @@
 			<TeamItem 
 				name="Ethanael Moody (thats me!)" 
 				role="Web Developer" 
-				linkedinUrl="" 
-				image="">
+				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/" 
+				image="{ethanMoody}">
 			</TeamItem>
 			<TeamItem 
 				name="Jack" 
@@ -409,12 +415,6 @@
 				linkedinUrl="" 
 				image="">
 			</TeamItem>
-			<TeamItem
-					name="Landon Rusco"
-					role="Organizer/MLH head of contact"
-					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
-					image={LandonImage}
-				/>
 			<TeamItem 
 				name="Neh Patel" 
 				role="Volunteer Committee Lead" 
