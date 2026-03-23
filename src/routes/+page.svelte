@@ -17,10 +17,11 @@
 	import LandonImage from '$lib/assets/landonrusco.png';
 	import bavushiImage from '$lib/assets/bivushiBasnet.png';
 	import theOneTheOnlyTheGallagher from '$lib/assets/jackGallagher.png';
-	import { browser } from '$app/environment';
 	import ethanMoody from '$lib/assets/ethanMoody.png';
+	import jaceDunlap from '$lib/assets/jaceDunlap.png';
 	// For responsive navigation
 	let isMenuOpen: boolean = false;
+	import { browser } from '$app/environment';
 
 	// Countdown timer
 	let days = 0;
@@ -403,12 +404,6 @@
 				image="{bavushiImage}">
 			</TeamItem>
 			<TeamItem 
-				name="Ethan" 
-				role="Art Director" 
-				linkedinUrl="" 
-				image="">
-			</TeamItem>
-			<TeamItem 
 				name="Ethanael Moody (thats me!)" 
 				role="Web Developer" 
 				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/" 
@@ -419,6 +414,12 @@
 				role="Sponsorship Coordinator" 
 				linkedinUrl="https://www.linkedin.com/in/jack-gallagher-/" 
 				image="{theOneTheOnlyTheGallagher}">
+			</TeamItem>
+			<TeamItem
+				name="Jace Dunlap"
+				role="Art Director"
+				linkedinUrl="https://www.linkedin.com/in/jace-dunlap/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+				image="{jaceDunlap}">
 			</TeamItem>
 			<TeamItem 
 				name="Neh Patel" 
