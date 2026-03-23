@@ -8,15 +8,10 @@
 	import HCIOLogo from '$lib/assets/HCIO_logo.png';
 	import StudentAssociationLogo from '$lib/assets/studentassociationlogo.png';
 	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
-<<<<<<< HEAD
 	import Image1 from '$lib/assets/workingImage1.png';
 	import Image2 from '$lib/assets/workingImage2.png';
 
 	// Images of directors, etc.
-=======
-	import Image1 from '$lib/assets/image1.png';
-	import Image2 from '$lib/assets/image2.png';
->>>>>>> main
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
@@ -81,12 +76,8 @@
 	});
 
 
-<<<<<<< HEAD
 	// FIXME: Change the registrationURL and the discordURL to be consistent across all components.
 	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
-=======
-	const registrationURL = 'https://forms.gle/q8KpPixbczVfDdMs9';
->>>>>>> main
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -386,15 +377,12 @@
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
 				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
-<<<<<<< HEAD
-=======
 				/>
 				<TeamItem
 					name="Landon Rusco"
 					role="Organizer/MLH head of contact"
 					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
 					image={LandonImage}
->>>>>>> main
 				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
