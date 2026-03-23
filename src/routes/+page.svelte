@@ -401,11 +401,7 @@
 				name="Bivushi Basnet" 
 				role="Logistics Director" 
 				linkedinUrl="https://www.linkedin.com/in/bivushi-basnet777/" 
-<<<<<<< HEAD
 				image="{bavushiImage}">
-=======
-				image="">
->>>>>>> main
 			</TeamItem>
 			<TeamItem 
 				name="Ethan" 
