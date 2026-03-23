@@ -15,7 +15,6 @@
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
-	import ethanImage from '$lib/assets/ethanMoody.png';
 	import bavushiImage from '$lib/assets/bivushiBasnet.png';
 	import theOneTheOnlyTheGallagher from '$lib/assets/jackGallagher.png';
 	import { browser } from '$app/environment';
