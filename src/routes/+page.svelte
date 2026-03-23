@@ -63,7 +63,7 @@
 				!target.closest('nav') &&
 				!target.closest('button[aria-label="Toggle menu"]')
 			) {
-				toggleMenu;
+				toggleMenu();
 			}
 		};
 
@@ -81,6 +81,7 @@
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
+	// eslint-disable-next-line no-undef
 	const faqItems: FAQItem[] = [
 		{
 			question: 'What is a hackathon?',

@@ -5,14 +5,12 @@
 	import '../app.css';
 	let { children } = $props();
 
-<<<<<<< HEAD
 	// FIXME: Refactor this website so that registrationURL, and discordURL is consistent across all svelte components.
-=======
->>>>>>> main
 	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
 	const discordURL: string = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL: string = base + '/schedule';
 
+	// eslint-disable-next-line no-undef
 	const navItems: NavItem[] = [
 		{ id: 'about', label: 'About', href: base + '/#about' },
 		{ id: 'schedule', label: 'Schedule', href: scheduleURL },
