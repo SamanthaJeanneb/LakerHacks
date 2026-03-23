@@ -415,15 +415,9 @@
 			<TeamItem 
 				name="Ethanael Moody (thats me!)" 
 				role="Web Developer" 
-<<<<<<< HEAD
-				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/"
-				image="{ethanImage}">
-				</TeamItem>
-=======
 				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/" 
 				image="{ethanMoody}">
 			</TeamItem>
->>>>>>> main
 			<TeamItem 
 				name="Jack Gallagher" 
 				role="Sponsorship Coordinator" 
