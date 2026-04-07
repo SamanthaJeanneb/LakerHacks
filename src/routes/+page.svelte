@@ -379,12 +379,6 @@
 				role="Co-director/MLH head of contact"
 				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
 				/>
-				<TeamItem
-					name="Landon Rusco"
-					role="Organizer/MLH head of contact"
-					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
-					image={LandonImage}
-				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
 				role="Devpost & Registration Manager" 
@@ -404,7 +398,7 @@
 				image="{bavushiImage}">
 			</TeamItem>
 			<TeamItem 
-				name="Ethanael Moody (thats me!)" 
+				name="Ethanael Moody (Me!)" 
 				role="Web Developer" 
 				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/" 
 				image="{ethanMoody}">
@@ -420,12 +414,6 @@
 				role="Art Director"
 				linkedinUrl="https://www.linkedin.com/in/jace-dunlap/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 				image="{jaceDunlap}">
-			</TeamItem>
-			<TeamItem 
-				name="Neh Patel" 
-				role="Volunteer Committee Lead" 
-				linkedinUrl="" 
-				image="">
 			</TeamItem>
 			<TeamItem 
 				name="Praneeta Pradhan" 
@@ -444,12 +432,6 @@
 				role="Sponsorship Coordinator"
 				linkedinUrl="https://www.linkedin.com/in/yshresth/"
 				image=""/>
-			<TeamItem
-				name="Ziaul Haque"
-				role=""
-				linkedinUrl=""
-				image=""
-			></TeamItem>
 			</div>
 		</div>
 	</section>
