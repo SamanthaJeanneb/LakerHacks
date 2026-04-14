@@ -1,24 +1,46 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { base } from '$app/paths';
 	import { slide } from 'svelte/transition';
 	import TeamItem from '$lib/Components/TeamItem.svelte';
 	// Sponsors for LakerHacks
-	import CSALogo from '$lib/assets/CSA_logo.png';
-	import HCIOLogo from '$lib/assets/HCIO_logo.png';
-	import StudentAssociationLogo from '$lib/assets/studentassociationlogo.png';
-	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
+	import CSALogo from '$lib/assets/sponsor_images/lh_logo-csa.png';
+	import HCIOLogo from '$lib/assets/sponsor_images/lh_logo-hcio.png';
+	// TODO: Find out where the actual MajorLeagueHacking logo is!
+	import MajorLeagueHackingLogo from '$lib/assets/sponsor_images/lh_logo-MLH.png';
+	import MicronLogo from '$lib/assets/sponsor_images/lh_logo-micron.png';
+	import SicuraLogo from '$lib/assets/sponsor_images/lh_logo-sicura.png';
+	// TODO: Get the EnterProLogo from Joey
+	import EnterProLogo from '$lib/assets/sponsor_images/lh_logo-enterpro.png'
+	// TODO: Get the HackUpstate Logo from Joey
+	import HackUpstateLogo from '$lib/assets/sponsor_images/lh_logo-hackupstate.png'
+	import NovelisLogo from '$lib/assets/sponsor_images/lh_logo-novelis.png';
+	import PaulAustinLogo from '$lib/assets/sponsor_images/lh_paulaustin.png';
+	// TODO: Get the Pure Button logo from Joey
+	import PureButtonLogo from '$lib/assets/sponsor_images/lh_logo-purebuttons.png'
+	import QualifAiLogo from '$lib/assets/sponsor_images/lh_logo-qualifAI.png';
+	import KenwoodConnectLogo from '$lib/assets/sponsor_images/lh_logo-kenwood.png';
+	import WonzonesCalzonesLogo from '$lib/assets/sponsor_images/lh_logo-wonzones.png';
+	
+	// TODO: Get the following Nord Security images
+	import NexosAiLogo from '$lib/assets/sponsor_images/lh_logo-nexosai.svg';
+	import NordVPNLogo from '$lib/assets/sponsor_images/lh_logo-nordVPN.png';
+	import SailyLogo from '$lib/assets/sponsor_images/lh_logo-sailySim.png';
+	import incogniLogo from '$lib/assets/sponsor_images/lh_logo-incogni.png';
+	import NordPassLogo from '$lib/assets/sponsor_images/lh_logo-nordPass.png';
+	import NordProtectLogo from '$lib/assets/sponsor_images/lh_logo-nordprotect.png'
+	// Special thanks for LakerHacks
+
+
 	import Image1 from '$lib/assets/workingImage1.png';
 	import Image2 from '$lib/assets/workingImage2.png';
 
 	// Images of directors, etc.
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
-	import LandonImage from '$lib/assets/landonrusco.png';
-	import bavushiImage from '$lib/assets/bivushiBasnet.png';
+	import BavushiImage from '$lib/assets/bivushiBasnet.png';
 	import theOneTheOnlyTheGallagher from '$lib/assets/jackGallagher.png';
 	import ethanMoody from '$lib/assets/ethanMoody.png';
-	import jaceDunlap from '$lib/assets/jaceDunlap.png';
+	import JaceDunlap from '$lib/assets/jaceDunlap.png';
 	// For responsive navigation
 	let isMenuOpen: boolean = false;
 	import { browser } from '$app/environment';
@@ -79,7 +101,7 @@
 	// FIXME: Change the registrationURL and the discordURL to be consistent across all components.
 	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
-	const scheduleURL = base + '/schedule';
+	const scheduleURL = "https://docs.google.com/document/d/1pBrEOZ6A4_cW2II83rrgYoqRCfr0ZsESkwK_hocAE28/edit?usp=sharing";
 
 	// eslint-disable-next-line no-undef
 	const faqItems: FAQItem[] = [
@@ -92,7 +114,7 @@
 		{
 			question: 'Who can participate?',
 			answer:
-				"SUNY Oswego students who are passionate about technology and innovation can participate! No matter your major or background, if you're excited about building something cool and learning new skills, LakerHacks is for you.",
+				"Any college student that is 18 or above, who is passionate about technology and innovation can participate! No matter your major or background, if you're excited about building something cool and learning new skills, LakerHacks is for you.",
 			expanded: false
 		},
 		{
@@ -181,7 +203,7 @@
 						Register Now
 					</a>
 					<a
-						href={base + '/schedule'}
+						href={scheduleURL}
 						class="rounded-md border border-[#D4563F] bg-[#0B111F] px-6 py-2 text-sm font-medium text-[#D4563F] transition-all hover:bg-[#050a14]"
 					>
 						View Schedule
@@ -225,35 +247,90 @@
 		</div>
 	</section>
 
-	<!-- Sponsors Section -->
-	<section id="sponsors" class="mx-auto w-full px-4 py-[100px] text-center">
-		<div class="mx-auto flex max-w-[1000px] flex-col gap-[40px]">
-			<h2 class="text-[#9CC747]">Sponsors</h2>
-			<div class="flex flex-wrap justify-center gap-[40px] p-4 xl:p-8">
-				<div class="flex w-[250px] justify-center">
-					<img src={CSALogo} alt="CSA Logo" class="h-[100px] w-auto" />
-				</div>
-				<div class="flex w-[250px] justify-center">
-					<img src={HCIOLogo} alt="HCIO Logo" class="h-[100px] w-auto" />
-				</div>
-				<div class="flex w-[250px] justify-center">
-					<img
-						src={StudentAssociationLogo}
-						alt="Student Association Logo"
-						class="h-[100px] w-auto"
-					/>
-				</div>
-				<div class="flex w-[250px] justify-center">
-					<img src={AuxServicesLogo} alt="Auxiliary Services Logo" class="h-[100px] w-auto" />
-				</div>
-			</div>
-			<p class="text-white/80">
-				Looking to sponsor? Email us at <a
-					href="mailto:lakerhacks@oswego.edu"
-					class="text-[#D4563F] hover:underline">lakerhacks@oswego.edu</a
-				> for more details!
-			</p>
-		</div>
+<section id="sponsors" class="mx-auto w-full px-4 py-[100px] text-center">
+        <div class="mx-auto flex max-w-[1000px] flex-col gap-[40px]">
+            <h2 class="text-[#9CC747]">Sponsors (descending by sponsor amount)</h2>
+            <div class="flex flex-wrap justify-center gap-[40px] p-4 xl:p-8">
+                
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{MajorLeagueHackingLogo}" alt="The Major League Hacking Logo." class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{CSALogo}" alt="CSA Logo" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{MicronLogo}" alt="The Micron Logo, a stylized Micron." class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{SicuraLogo}" alt="The Sicura Logo, a stylized helmet, with the words Sicura emblazoned next to it." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{NordVPNLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{NordPassLogo}" alt="The NordPass Logo, a stylized white mountain against a teal backdrop, with the words NordPass flanking it from the right." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{NordProtectLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{incogniLogo}" alt="The incogni logo, the word incogni with a filled in o." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{SailyLogo}" alt="The Saily logo" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{NexosAiLogo}" alt="The NexosAI logo" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{EnterProLogo}" alt="The EnterPro Logo, a left bracket, front slash, and right bracket." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{HackUpstateLogo}" alt="The HackUpstate logo, with the words HackUpstate in a teal." class="max-h-full max-w-full object-contain"/>
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{NovelisLogo}" alt="The Novelis Logo, just the words Novelis." class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{HCIOLogo}" alt="HCIO Logo" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{PaulAustinLogo}" alt="Paul Austin" class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{PureButtonLogo}" alt="The Pure Buttons Logo, simply saying Pure." class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{QualifAiLogo}" alt="The QualifAiLogo, a stylized brain with a system BUS running through the middle." class="max-h-full max-w-full object-contain" />
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{KenwoodConnectLogo}" alt="The Kenwood Connect logo, a stylized shield to the left, emblazoned with an open book on the top left, a graduation cap on the top right, a torch on the bottom left, and a globe on the bottom right. To the right of the shield are the words Kenwood." class="max-h-full max-w-full object-contain" /> 
+                </div>
+                <div class="flex h-[120px] w-[250px] items-center justify-center">
+                    <img src="{WonzonesCalzonesLogo}" alt="The Wonzones Calzones logo, simply a circle around the words Wonzones Calzones." class="max-h-full max-w-full object-contain" />
+                </div>          
+            </div>
+            <p class="text-white/80">
+                Looking to sponsor? Email us at <a
+                    href="mailto:lakerhacks@oswego.edu"
+                    class="text-[#D4563F] hover:underline">lakerhacks@oswego.edu</a
+                > for more details!
+            </p>
+        </div>
+    </section>
+	<!-- TODO: Add a "Special Thanks" section for people that we owe, but did not sponsor us directly. -->
+	<section>
+	<h1 class="font-bold text-center mb-5">Special Thanks to: </h1>
+		<p class="font-normal text-center mb-5">The SUNY Oswego Computer Science Department</p>
+		<p class="font-normal text-center mb-5">Student Association</p>
+		<p class="font-normal text-center mb-5">The SUNY Oswego Computer Science Association</p>
+		<p class="font-normal text-center mb-5">The Human-Computer Interaction Organization</p>
+		<p class="font-normal text-center mb-5">Collegiate Science and Technology Entry Program</p>
+		<p class="font-normal text-center mb-5">Women in Computing</p>
+		<p class="font-normal text-center mb-5">National Society of Black Engineers</p>
+		<p class="font-normal text-center mb-5">Content Creation Club</p>
+		<p class="font-normal text-center mb-5">Students Helping Oz Peers</p>
+		<p class="font-normal text-center mb-5">Auxiliary Services</p>
 	</section>
 
 	<!-- Schedule/CTA Section -->
@@ -304,7 +381,7 @@
 					</div>
 					<div class="flex justify-center xl:justify-start">
 						<a
-							href={base + '/schedule'}
+							href={scheduleURL}
 							class="rounded-md border border-[#D4563F] bg-[#0B111F] px-6 py-2 text-sm font-medium text-[#D4563F] transition-all hover:bg-[#050a14]"
 						>
 							View Schedule
@@ -395,7 +472,7 @@
 				name="Bivushi Basnet" 
 				role="Logistics Director" 
 				linkedinUrl="https://www.linkedin.com/in/bivushi-basnet777/" 
-				image="{bavushiImage}">
+				image="{BavushiImage}">
 			</TeamItem>
 			<TeamItem 
 				name="Ethanael Moody (Me!)" 
@@ -413,7 +490,7 @@
 				name="Jace Dunlap"
 				role="Art Director"
 				linkedinUrl="https://www.linkedin.com/in/jace-dunlap/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-				image="{jaceDunlap}">
+				image="{JaceDunlap}">
 			</TeamItem>
 			<TeamItem 
 				name="Praneeta Pradhan" 
