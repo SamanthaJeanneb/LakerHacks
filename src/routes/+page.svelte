@@ -298,11 +298,10 @@
                     <img src="{PaulAustinLogo}" alt="Paul Austin" class="max-h-full max-w-full object-contain" />
                 </div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{PureButtonLogo}" alt="The Pure Buttons Logo, simply saying Pure." class="max-h-full max-w-full object-contain" />
-                </div>
-                <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{QualifAiLogo}" alt="The QualifAiLogo, a stylized brain with a system BUS running through the middle." class="max-h-full max-w-full object-contain" />
-                </div>
+                    <a target="_blank" href="https://www.purebuttons.com/?srsltid=AfmBOoo5bib-OYWHxFo0P4wkjrZjo4adA0nY-JRo45LtwVvGGkSRa10_" class="max-w-40">
+						<img src="{PureButtonLogo}" alt="The Pure Buttons Logo, simply saying Pure." class="max-h-full max-w-full object-contain" />
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
                     <img src="{KenwoodConnectLogo}" alt="The Kenwood Connect logo, a stylized shield to the left, emblazoned with an open book on the top left, a graduation cap on the top right, a torch on the bottom left, and a globe on the bottom right. To the right of the shield are the words Kenwood." class="max-h-full max-w-full object-contain" /> 
                 </div>
@@ -318,7 +317,6 @@
             </p>
         </div>
     </section>
-	<!-- TODO: Add a "Special Thanks" section for people that we owe, but did not sponsor us directly. -->
 	<section>
 	<h1 class="font-bold text-center mb-5">Special Thanks to: </h1>
 		<p class="font-normal text-center mb-5">The SUNY Oswego Computer Science Department</p>
