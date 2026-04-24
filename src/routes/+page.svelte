@@ -265,23 +265,35 @@
                     <img src="{SicuraLogo}" alt="The Sicura Logo, a stylized helmet, with the words Sicura emblazoned next to it." class="max-h-full max-w-full object-contain"/>
                 </div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{NordVPNLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
-                </div>
+                    <a href="https://nordvpn.com/coupon/deal/?coupon=hackathons&utm_medium=affiliate&utm_term=&utm_content&utm_source=aff92203&utm_campaign=off600" rel="nofollow" class="max-w-40" >
+						<img src="{NordVPNLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{NordPassLogo}" alt="The NordPass Logo, a stylized white mountain against a teal backdrop, with the words NordPass flanking it from the right." class="max-h-full max-w-full object-contain"/>
-                </div>
+					<a href="https://nordpass.com" class="max-w-40">
+                	    <img src="{NordPassLogo}" alt="The NordPass Logo, a stylized white mountain against a teal backdrop, with the words NordPass flanking it from the right." class="max-h-full max-w-full object-contain"/>
+					</a>	
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{NordProtectLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
-                </div>
+                    <a href="https://nordprotect.com" class="max-w-40">
+						<img src="{NordProtectLogo}" alt="The NordVPN Logo, a stylized white mountain against a blue backdrop, with the words nordVPN flanking it from the right." class="max-h-full max-w-full object-contain"/>
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{incogniLogo}" alt="The incogni logo, the word incogni with a filled in o." class="max-h-full max-w-full object-contain"/>
-                </div>
+                    <a href="https://incogni.com" class="max-w-40">
+						<img src="{incogniLogo}" alt="The incogni logo, the word incogni with a filled in o." class="max-h-full max-w-full object-contain"/>
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{SailyLogo}" alt="The Saily logo" class="max-h-full max-w-full object-contain" />
-                </div>
+                    <a href="https://saily.com" class="max-w-40">
+						<img src="{SailyLogo}" alt="The Saily logo" class="max-h-full max-w-full object-contain" />
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
-                    <img src="{NexosAiLogo}" alt="The NexosAI logo" class="max-h-full max-w-full object-contain" />
-                </div>
+                    <a href="https://nexos.ai" class="max-w-40">
+					<img src="{NexosAiLogo}" alt="The NexosAI logo" class="max-h-full max-w-full object-contain" />
+					</a>
+				</div>
                 <div class="flex h-[120px] w-[250px] items-center justify-center">
                     <img src="{EnterProLogo}" alt="The EnterPro Logo, a left bracket, front slash, and right bracket." class="max-h-full max-w-full object-contain"/>
                 </div>
